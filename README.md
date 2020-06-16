@@ -16,3 +16,9 @@ This project is meant to explain problems and solutions related to questions tha
 >Implement a queue class using two stacks
 ##### Solution: [MyCustomQueue](/src/main/java/StacksandQueues/MyCustomQueue.java)
 ##### Test: [MyCustomQueueTest](/src/test/java/StacksandQueues/MyCustomQueueTest.java)
+
+#### Question 4
+>An animal shelter holds only dogs and cats. It operates on a 'first in first out' basis. Create the data structures
+>for the system and implement the basic functions.
+##### Solution: [AnimalShelter](/src/main/java/StacksandQueues/AnimalShelter.java)
+##### Test: [AnimalShelterTest](/src/test/java/StacksandQueues/AnimalShelterTest.java)
