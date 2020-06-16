@@ -18,6 +18,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#specific env files
+/.idea
+/.gradle
+/gradle
+/build
+
 # =========================
 # Operating System Files
 # =========================
