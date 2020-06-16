@@ -3,6 +3,7 @@ package StacksandQueues;
 import org.junit.Test;
 
 import java.net.DatagramPacket;
+import java.util.EmptyStackException;
 
 import static org.junit.Assert.*;
 
@@ -14,6 +15,12 @@ public class AnimalShelterTest {
         AnimalShelter ash = new AnimalShelter();
         ash.enqueue(dog);
         assertEquals(dog.name, ash.dequeueAny().name);
+    }
+
+    @Test
+    public void dequeueAnyWhenEmpty() {
+        AnimalShelter ash = new AnimalShelter();
+        assertEquals(null, ash.dequeueAny());
     }
 
     @Test
@@ -44,6 +51,9 @@ public class AnimalShelterTest {
         ash.enqueue(dog3);
 
         assertEquals(dog1.name, ash.dequeueAny().name);
+        assertEquals(dog2.name, ash.dequeueAny().name);
+        assertEquals(cat1.name, ash.dequeueAny().name);
+        assertEquals(dog3.name, ash.dequeueAny().name);
     }
 
     @Test
@@ -60,6 +70,9 @@ public class AnimalShelterTest {
         ash.enqueue(dog3);
 
         assertEquals(cat1.name, ash.dequeueAny().name);
+        assertEquals(dog1.name, ash.dequeueAny().name);
+        assertEquals(dog2.name, ash.dequeueAny().name);
+        assertEquals(dog3.name, ash.dequeueAny().name);
     }
 
     @Test
@@ -76,6 +89,8 @@ public class AnimalShelterTest {
         ash.enqueue(cat1);
 
         assertEquals(dog1.name, ash.dequeueAny().name);
+        assertEquals(dog2.name, ash.dequeueAny().name);
+        assertEquals(dog3.name, ash.dequeueAny().name);
+        assertEquals(cat1.name, ash.dequeueAny().name);
     }
-
 }
