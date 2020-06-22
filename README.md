@@ -1,6 +1,16 @@
 # Intro
 This project is meant to explain problems and solutions related to questions that appear normally during interviews
 
+## Arrays and Strings
+##### Question 1
+>Given an array of integers, write a method to find indices m and n such that if you sorted elements m through n, the entire array would be
+>sorted. Minimize n-m (find the smallest such sequence).
+>EXAMPLE:
+>input: 1, 2, 3, 4, 8, 7, 6, 5, 9, 10
+>output: 4 7
+##### Solution: [SubSort](/src/main/java/ArraysandStrings/SubSort.java)
+##### Test: [SubSortTest](/src/test/java/ArraysandStrings/SubSortTest.java)
+
 
 ## Stacks and Queues
 ##### Question 1
